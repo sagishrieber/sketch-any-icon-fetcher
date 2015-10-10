@@ -1,0 +1,23 @@
+{
+  "author" : "Sagi Shrieber",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "command ctrl shift f",
+      "name" : "Get a Favicon by URL",
+      "identifier" : "Get me a favicon"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "Get me a favicon"
+    ],
+    "title" : "Get me a favicon"
+  },
+  "identifier" : "com.example.sketch.03aaf1a1-a433-4e14-86fa-a77e0a51f310",
+  "version" : "1.0",
+  "description" : "Fetches any favicon based on URL using the google favicon API",
+  "authorEmail" : "sagi@hackingui.com",
+  "name" : "Get me a favicon"
+}
