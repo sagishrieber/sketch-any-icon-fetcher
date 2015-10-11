@@ -12,9 +12,9 @@ Sketch plugin to import any favicon (by URL) into your design using the Google F
 This plugin is based off of [Tobi Kremer's](https://github.com/soulchild "Tobi Kremer on Github") who has built the excellent [Company Logo Fetcher for Sketch](https://github.com/soulchild/sketch-logo-fetcher).
 
 ## P.S.
-This Plugin was made for our use at [Similarweb](http://similarweb.com "Similarweb"). We also shared a Sketch freebie of Data Visualization/Dashboard elements design available for download at [Hacking UI](http://hackingui.com "Hacking UI").
+This Plugin was originally made for our Product Design team at [Similarweb](http://similarweb.com "Similarweb"). If you're into dashboard designs - you'd also love our [Sketch freebie of Data Visualization Elements](http://hackingui.com/freebies/free-data-visualization-elements-ui-kit/ "Sketch freebie of Data Visualization on Hacking UI").
 
 #P.S.S
-If you want to connect you can find me on Twitter - [@sagishrieber](http://twitter.com/sagishrieber "@sagishrieber"), on [Dribbble](http://dribbble.com/sagishrieber "Dribbble") read what I have to say on [Hacking UI](http://hackingUI.com "Hacking UI").
+If you want to connect you can find me on [Twitter: @sagishrieber](http://twitter.com/sagishrieber "@sagishrieber"), on [Dribbble](http://dribbble.com/sagishrieber "Dribbble"), and read my (Design/Sketch/Life Hacking) articles on [Hacking UI](http://hackingUI.com "Hacking UI").
 
 
