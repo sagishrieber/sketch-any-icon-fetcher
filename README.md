@@ -1,6 +1,8 @@
 # Sketch GetFavicon plugin
-Sketch plugin to import any favicon (by URL) into your design using the Google Favicon API.
+Sketch plugin to import any favicon by URL into your design, originally made for our Product Design team at [Similarweb](http://similarweb.com "Similarweb"), now available for all.  
+This plugin uses the Google Favicon API.
 
+## Demo GIF
 ![image to explain how this works](https://github.com/sagishrieber/sketch-get-favicon-by-url/raw/master/favicon-plugin-demo.gif "how this works")
 
 ## How to use:
@@ -12,7 +14,7 @@ Sketch plugin to import any favicon (by URL) into your design using the Google F
 This plugin is based off of [Tobi Kremer's](https://github.com/soulchild "Tobi Kremer on Github") who has built the excellent [Company Logo Fetcher for Sketch](https://github.com/soulchild/sketch-logo-fetcher).
 
 ## If you liked this plugin
-This Plugin was originally made for our Product Design team at [Similarweb](http://similarweb.com "Similarweb"). If you're into dashboard designs - you'd also love our [Sketch freebie of Data Visualization Elements](http://hackingui.com/freebies/free-data-visualization-elements-ui-kit/ "Sketch freebie of Data Visualization on Hacking UI").
+If you're into dashboard designs - you'd also love our [Sketch freebie of Data Visualization Elements](http://hackingui.com/freebies/free-data-visualization-elements-ui-kit/ "Sketch freebie of Data Visualization on Hacking UI").
 
 ## Holla at me
 I would love to connect!  
