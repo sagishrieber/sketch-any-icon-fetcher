@@ -1,4 +1,4 @@
-# sketch-get-favicon-by-url
+# Sketch GetFavicon plugin
 Sketch plugin to import any favicon (by URL) into your design using the Google Favicon API.
 
 ![image to explain how this works](https://github.com/sagishrieber/sketch-get-favicon-by-url/raw/master/favicon-plugin-demo.gif "how this works")
