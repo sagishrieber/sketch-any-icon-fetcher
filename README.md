@@ -8,6 +8,8 @@ The plugin was originally made for our use in the Product Design team at [Simila
 
 The plugin uses the Google Favicon API.
 
+## Read how I created this plugin, so you can create your own!
+[http://hackingui.com/design/how-to-create-a-sketch-plugin/](http://hackingui.com/design/how-to-create-a-sketch-plugin/)
 ## How to use:
 1. Install by downloading ([download link](https://github.com/sagishrieber/sketch-get-favicon-by-url/archive/master.zip "download")), unziping, and then double clicking the "get me a favicon.sketchplugin" file.
 2. In Sketch, Create a 16x16px rectangle.
