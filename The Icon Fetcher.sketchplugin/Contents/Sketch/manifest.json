@@ -1,0 +1,39 @@
+{
+  "author" : "Sagi Shrieber, HackingUI.com",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "handler" : "getFavicon",
+      "shortcut" : "command ctrl shift f",
+      "name" : "Fetch me a Favicon",
+      "identifier" : "getFavicon"
+    },
+          {
+      "script" : "script.cocoascript",
+      "handler" : "getGplayAppicon",
+      "shortcut" : "command ctrl shift g",
+      "name" : "Fetch me a Google Play app icon",
+      "identifier" : "getGplayAppicon"
+    },
+              {
+      "script" : "script.cocoascript",
+      "handler" : "getAppStoreAppicon",
+      "shortcut" : "command ctrl shift a",
+      "name" : "Fetch me an App Store app icon",
+      "identifier" : "getAppStoreAppicon"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "getFavicon",
+      "getGplayAppicon",
+      "getAppStoreAppicon"
+    ],
+    "title" : "Fetch that Icon for me will you?"
+  },
+  "identifier" : "com.example.sketch.a6dc338b-8dd9-4442-acff-832fadc6e0d9",
+  "version" : "1.0",
+  "description" : "This plugin will let you insert any website's favicon, or iOS/Android app's icon into your design",
+  "authorEmail" : "sagishrieber@gmail.com",
+  "name" : "The Icon Fetcher"
+}
