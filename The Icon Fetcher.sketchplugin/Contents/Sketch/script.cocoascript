@@ -35,23 +35,25 @@ function getFavicon(context) {
         else {
             log('Found favicon for URL "' + url + '"');
             
-            faviconImage = [[NSImage alloc] initWithData:response];
-            allLayers = [[doc currentPage] layers];
+            var faviconImage = [[NSImage alloc] initWithData:response];
+            var faviconImageData = [[MSImageData alloc] initWithImage:faviconImage convertColorSpace:false];
+            var allLayers = [[doc currentPage] layers];
             for (var i = 0; i < [selection count]; i++) {
-                layer = selection[i];
+                var layer = selection[i];
                 if ([layer class] == MSShapeGroup) {
                     fill = layer.style().fills().firstObject();
                     coll = fill.documentData().images();
-                    [fill setPatternImage:faviconImage collection:coll];
+                    //[fill setPatternImage:faviconImage collection:coll];
                     fill.setFillType(4);         // Pattern fillType
                     fill.setPatternFillType(1);
+                    fill.setIsEnabled(true);
+                    [fill setImage:faviconImageData];
                 }
             }
         }
     }
 
     function activate() {
-        log(selection[0].frame());
         if ([selection count] == 0) {
             alert('Please select a shape to fill the favicon into.', 'Destination shape');
         }
@@ -109,16 +111,19 @@ function getGplayAppicon(context) {
         var imgRequest     = [NSURLRequest requestWithURL:imgURL];   
         var img = NSURLConnection.sendSynchronousRequest_returningResponse_error(imgRequest, null, null);       
             
-        GplayiconImage = [[NSImage alloc] initWithData:img];
-        allLayers = [[doc currentPage] layers];
+        var GplayiconImage = [[NSImage alloc] initWithData:img];
+	    var GplayiconImageData = [[MSImageData alloc] initWithImage:GplayiconImage convertColorSpace:false];
+        var allLayers = [[doc currentPage] layers];
         for (var i = 0; i < [selection count]; i++) {
-            layer = selection[i];
+            var layer = selection[i];
             if ([layer class] == MSShapeGroup) {
                 fill = layer.style().fills().firstObject();
                 coll = fill.documentData().images();
-                [fill setPatternImage:GplayiconImage collection:coll];
+                //[fill setPatternImage:GplayiconImage collection:coll];
                 fill.setFillType(4);         // Pattern fillType
                 fill.setPatternFillType(1);
+                fill.setIsEnabled(true);
+                [fill setImage:GplayiconImageData];
             }
         }
     
@@ -188,16 +193,19 @@ function getAppStoreAppicon(context) {
         var imgRequest     = [NSURLRequest requestWithURL:imgURL];   
         var img = NSURLConnection.sendSynchronousRequest_returningResponse_error(imgRequest, null, null);       
             
-        AppStoreiconImage = [[NSImage alloc] initWithData:img];
-        allLayers = [[doc currentPage] layers];
+        var AppStoreiconImage = [[NSImage alloc] initWithData:img];
+        var AppStoreiconImageData = [[MSImageData alloc] initWithImage:AppStoreiconImage convertColorSpace:false];
+        var allLayers = [[doc currentPage] layers];
         for (var i = 0; i < [selection count]; i++) {
-            layer = selection[i];
+            var layer = selection[i];
             if ([layer class] == MSShapeGroup) {
                 fill = layer.style().fills().firstObject();
                 coll = fill.documentData().images();
-                [fill setPatternImage:AppStoreiconImage collection:coll];
+                //[fill setPatternImage:AppStoreiconImage collection:coll];
                 fill.setFillType(4);         // Pattern fillType
                 fill.setPatternFillType(1);
+                fill.setIsEnabled(true);
+                [fill setImage:AppStoreiconImageData];
             }
         }
     
