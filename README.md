@@ -1,4 +1,5 @@
 # Sketch Icon Fetcher
+**UPDATE** (Feb 22,2016): Plugin fixed and now supports Sketch 3.5+
 **UPDATE** (Oct 18,2015): The plugin now also supports App Store and Google Play icons!
 
 ![image to explain how this works](https://github.com/sagishrieber/sketch-any-icon-fetcher/blob/master/demo-appicon.gif "how this works")
