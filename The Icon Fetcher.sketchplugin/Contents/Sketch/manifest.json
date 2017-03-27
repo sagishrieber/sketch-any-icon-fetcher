@@ -37,7 +37,7 @@
       "getGplayAppicon",
       "getAppStoreAppicon"
     ],
-    "title" : "Fetch App Store icon / GPlay icon / Favicon"
+    "title" : "🙌 Fetch Favicon/Logo/GPlay/App Store icon"
   },
   "identifier" : "com.example.sketch.a6dc338b-8dd9-4442-acff-832fadc6e0d9",
   "version" : "1.2",
