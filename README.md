@@ -1,20 +1,22 @@
 # Sketch Icon Fetcher
 ### Get the image of any App Store app icon, Google Play app icon, company logo, or a website's Favicon
 
-**UPDATE** (Mar 27 2017): Plugin fixed and now supports Sketch 41+ and added NEW functionality: Get any company logo by Clearbit API
+**LATEST UPDATE** (Mar 27 2017): Plugin fixed and now supports Sketch 41+ and added NEW functionality: Get any company logo by Clearbit API
 
 
-###This is how it looks like:
+## This is how it looks like:
 
 ![image to explain how this looks](https://github.com/sagishrieber/sketch-any-icon-fetcher/blob/master/plugin-screenshot.jpg "The Plugin")
 
 
-###The plugin generates icons based on the company/product name. i.e. waze:
+## The plugin generates icons based on the company/product name.
+
+i.e. waze:
 
 ![image to see example icons](https://github.com/sagishrieber/sketch-any-icon-fetcher/blob/master/examples.jpg "What the plugin generates")
 
 
-###It works like this:
+## It works like this:
 
 ![image to explain how this works](https://github.com/sagishrieber/sketch-any-icon-fetcher/blob/master/demo-appicon.gif "how this works")
 
