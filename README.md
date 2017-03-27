@@ -3,6 +3,9 @@
 
 **UPDATE** (Mar 27 2017): Plugin fixed and now supports Sketch 41+ and added NEW functionality: Get any company logo by Clearbit API
 
+![image to explain how this looks](https://github.com/sagishrieber/sketch-any-icon-fetcher/blob/master/plugin-screenshot.jpg "The Plugin")
+
+![image to see example icons](https://github.com/sagishrieber/sketch-any-icon-fetcher/blob/master/examples.jpg "What the plugin generates")
 
 **UPDATE** (Feb 22,2016): Plugin fixed and now supports Sketch 3.5+
 
