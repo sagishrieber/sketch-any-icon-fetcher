@@ -1,8 +1,4 @@
-
-// GET FAVICON BY URL
-
-function getFavicon(context) {
-
+var onRun = function(context) {
    var doc = context.document;
     var selection = context.selection
 
@@ -19,13 +15,14 @@ function getFavicon(context) {
                 fetchThatFavicon(url);
             }
             else {
-                 alert('bla bla error', 'Destination shape');
+                 //  alert('bla bla error', 'Destination shape');
+                 getFaviconModal();
             }
         }
     }
 
     function fetchThatFavicon(url) {
-        var apiURL      = [NSURL URLWithString:'http://www.google.com/s2/favicons?domain=' + url];
+        var apiURL      = [NSURL URLWithString:'https://www.google.com/s2/favicons?domain=' + url];
         var request     = [NSURLRequest requestWithURL:apiURL];
         var response    = NSURLConnection.sendSynchronousRequest_returningResponse_error(request, null, null);
 
@@ -142,86 +139,4 @@ function getGplayAppicon(context) {
 
     activate();
 
-}
-
-
-
-
-
-//-------------------------------------------------------------------------------------------------------------
-
-
-// GET iOS APP STORE ICON BY NAME OF APP
-
-
-function getAppStoreAppicon(context) {
-  var doc = context.document;
-  var selection = context.selection
-
-    function alert(msg, title) {
-        var app = [NSApplication sharedApplication];
-        [app displayDialog:msg withTitle:title || "Error"];
-    }
-
-    function getAppStoreiconModal() {
-
-        var userInput = [doc askForUserInput:"Enter any iOS app's name (i.e. Facebook)):" initialValue:""];
-
-        if (userInput !== null) {
-
-
-            if (userInput !== null) {
-
-                fetchThatAppStoreicon(userInput);
-            }
-            else {
-                 alert('error', 'Destination shape');
-            }
-        }
-    }
-
-    function fetchThatAppStoreicon(appName) {
-        var apiURL      = [NSURL URLWithString:'https://itunes.apple.com/search?term='+ appName +'&entity=software'];
-        var request     = [NSURLRequest requestWithURL:apiURL];
-        var response    = NSURLConnection.sendSynchronousRequest_returningResponse_error(request, null, null);
-
-        var json = [NSJSONSerialization JSONObjectWithData:response options:nil error:nil];
-
-        var imgUrlString = json.results[0].artworkUrl100;
-        var imgURL      = [NSURL URLWithString:imgUrlString];
-        var imgRequest     = [NSURLRequest requestWithURL:imgURL];
-        var img = NSURLConnection.sendSynchronousRequest_returningResponse_error(imgRequest, null, null);
-
-        var AppStoreiconImage = [[NSImage alloc] initWithData:img];
-        var AppStoreiconImageData = [[MSImageData alloc] initWithImage:AppStoreiconImage convertColorSpace:false];
-        var allLayers = [[doc currentPage] layers];
-        for (var i = 0; i < [selection count]; i++) {
-            var layer = selection[i];
-            if ([layer class] == MSShapeGroup) {
-                fill = layer.style().fills().firstObject();
-                coll = fill.documentData().images();
-                //[fill setPatternImage:AppStoreiconImage collection:coll];
-                fill.setFillType(4);         // Pattern fillType
-                fill.setPatternFillType(1);
-                fill.setIsEnabled(true);
-                [fill setImage:AppStoreiconImageData];
-            }
-        }
-
-    }
-
-
-
-    function activate() {
-        log(selection[0].frame());
-        if ([selection count] == 0) {
-            alert('Please select a shape to fill the App Store icon into.', 'Destination shape');
-        }
-        else {
-            getAppStoreiconModal();
-        }
-    }
-
-    activate();
-
-}
+};

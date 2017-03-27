@@ -1,4 +1,9 @@
 # Sketch Icon Fetcher
+
+
+**UPDATE** (Mar 27 2017): Plugin fixed and now supports Sketch 41+ and added NEW functionality: Get any company logo by Clearbit API
+
+
 **UPDATE** (Feb 22,2016): Plugin fixed and now supports Sketch 3.5+
 
 **UPDATE** (Oct 18,2015): The plugin now also supports App Store and Google Play icons!

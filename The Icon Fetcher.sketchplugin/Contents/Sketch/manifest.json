@@ -2,22 +2,29 @@
   "author" : "Sagi Shrieber, HackingUI.com",
   "commands" : [
     {
-      "script" : "script.cocoascript",
-      "handler" : "getFavicon",
+      "script" : "getFavicon.cocoascript",
+      "handler" : "onRun",
       "shortcut" : "command ctrl shift f",
       "name" : "Fetch me a Favicon",
       "identifier" : "getFavicon"
     },
+    {
+"script" : "getComLogo.cocoascript",
+"handler" : "onRun",
+"shortcut" : "command ctrl shift l",
+"name" : "Fetch me any company logo",
+"identifier" : "getComLogo"
+},
           {
-      "script" : "script.cocoascript",
-      "handler" : "getGplayAppicon",
+      "script" : "getGplayAppicon.cocoascript",
+      "handler" : "onRun",
       "shortcut" : "command ctrl shift g",
       "name" : "Fetch me a Google Play app icon",
       "identifier" : "getGplayAppicon"
     },
               {
-      "script" : "script.cocoascript",
-      "handler" : "getAppStoreAppicon",
+      "script" : "getAppStoreAppicon.cocoascript",
+      "handler" : "onRun",
       "shortcut" : "command ctrl shift a",
       "name" : "Fetch me an App Store app icon",
       "identifier" : "getAppStoreAppicon"
@@ -26,14 +33,16 @@
   "menu" : {
     "items" : [
       "getFavicon",
+      "getComLogo",
       "getGplayAppicon",
       "getAppStoreAppicon"
     ],
-    "title" : "Fetch that Icon for me will you?"
+    "title" : "Fetch App Store icon / GPlay icon / Favicon"
   },
   "identifier" : "com.example.sketch.a6dc338b-8dd9-4442-acff-832fadc6e0d9",
-  "version" : "1.0",
+  "version" : "1.2",
   "description" : "This plugin will let you insert any website's favicon, or iOS/Android app's icon into your design",
-  "authorEmail" : "sagishrieber@gmail.com",
-  "name" : "The Icon Fetcher"
+  "authorEmail" : "sagi@hackingui.com",
+  "name" : "The Icon Fetcher",
+  "compatibleVersion": "3.5.2"
 }
